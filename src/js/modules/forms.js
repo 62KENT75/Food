@@ -2,8 +2,6 @@ import {closeModal, openModal} from './modal';
 import {postData} from '../services/services';
 
 function forms(formSelector, modalTimerId) {
-    // Forms
-
     const forms = document.querySelectorAll(formSelector);
 
     const message = {
@@ -68,11 +66,6 @@ function forms(formSelector, modalTimerId) {
             closeModal('.modal');
         }, 4000);
     }
-
-    fetch('http://localhost:3000/menu')
-    .then(data => data.json())
-    .then(res => console.log(res));
-
 }
 
 export default forms;

@@ -186,8 +186,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function forms(formSelector, modalTimerId) {
-  // Forms
-
   const forms = document.querySelectorAll(formSelector);
   const message = {
     loading: 'img/form/spinner.svg',
@@ -240,7 +238,6 @@ function forms(formSelector, modalTimerId) {
       (0,_modal__WEBPACK_IMPORTED_MODULE_0__.closeModal)('.modal');
     }, 4000);
   }
-  fetch('http://localhost:3000/menu').then(data => data.json()).then(res => console.log(res));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (forms);
 
